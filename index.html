@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Youtube clone</title>
+
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="left-section">
+            <img class="hamburger-menu" src="./Icons/hamburger-menu.svg" alt="">
+            <div class="youtube-logo-container">
+                <a href="https://www.youtube.com/"><img class="youtube-logo" src="Icons/youtube-logo.svg" alt=""></a>
+                <span>YouTube Home</span>
+            </div>
+        </div>
+        <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search"/>
+                <button class="search-button">
+                    <img class="search-icon" src="Icons/search.svg" alt="">
+                    <div class="search-btn-tooltip">Search</div>
+                </button>
+                <button class="voice-search-button">
+                    <img class="voice-search-icon" src="Icons/voice-search-icon.svg" alt="">
+                    <div class="voice-search-btn-tooltip">Search with your voice</div>
+                </button>
+        </div>
+        <div class="right-section">
+            <img class="upload-icon" src="Icons/upload.svg" alt=""><div class="create-tooltip">Create</div>
+                <!-- <img class="youtube-apps-icon" src="Icons/youtube-apps.svg" alt=""> -->
+            <div class="notifications-icon-container">
+                <img class="notifications-icon" src="Icons/notifications.svg" alt="">
+                <div class="notifications-count">9</div>
+            </div>
+            <div class="notifications-tooltip">Notifications</div>
+                <img class="current-user-picture"src="Channel-Profile-Pic/My-pfp.jpg" alt="">
+        </div> 
+    </header>
+
+    <div class="sidebar">
+        <div class="sidebar-link home">
+            <img src="Icons/home.svg">
+            <div>Home</div>
+            <span>Home</span>
+        </div>
+        <div class="sidebar-link shorts">
+            <img class="shorts-icon" src="Icons/Shorts.svg">
+            <div>Shorts</div>
+            <span>Shorts</span>
+        </div>
+        <div class="sidebar-link subscriptions">
+            <img src="Icons/subscriptions.svg">
+            <div>Subscriptions</div>
+            <span>Subscriptions</span>
+        </div>
+            <div class="sidebar-link library">
+            <img src="Icons/library.svg">
+            <div>Library</div>
+            <span>Library</span>
+        </div>
+    </div>
+
+     
+
+    <main>
+
+        <div class="categories">
+            <section class="category-section">
+                <button class="category icon"><img class="explore-icon" src="Icons/Explore.svg" alt=""><span class="explore-icon-line"></span></button>
+                <button class="category active">All</button>
+                <button class="category">Music</button>
+                <button class="category">Gaming</button>
+                <button class="category">Thoughts</button>
+                <button class="category extra">Podcasts</button>            <!--only visible to large screens-->
+                <button class="category extra ">CSS</button>                <!--only visible to large screens-->
+                <button class="category extra ">Algorithms</button>         <!--only visible to large screens-->
+                <button class="category extra ">Data structures</button>    <!--only visible to large screens-->
+                <button class="category extra">Pop Music</button>           <!--only visible to large screens-->
+                <button class="category">History</button>
+                <button class="category">Comedy</button>
+                <button class="category">APIs</button>
+                <button class="category">Recently uploaded</button>
+                <button class="category">Watched</button>
+                <button class="category">New to you</button>
+                <div class="right-arrow-btn-container">
+                    <button class="right-arrow-btn"><img class="right-arrow-icon" src="Icons/arrow_forward.svg" alt=""></button>
+                </div>
+            </section>
+        </div>
+
+        <section class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=bAROXMB0HCQ"><img class="thumbnail" src="Thumbnail/Hanuman Chalisa Thumbnail.webp"></a>
+                    <div class="video-time">9:06</div> 
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@sacredverses"><img class="profile-picture" src="Channel-Profile-Pic/Hanuman Chalisa Channel logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=bAROXMB0HCQ">Shri Hanuman Chalisa - with Hindi lyrics</a>
+                        </p>
+                        <p class="video-author">
+                            <a href="https://www.youtube.com/@sacredverses">  sacredverses <img class="verify-png" src="Png/check.png" alt=""> </a>
+                        </p>
+                        <p class="video-stats">
+                                 10M views &#183; 9 years ago
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=UtF6Jej8yb4">
+                        <img class="thumbnail" src="Thumbnail/The nights avici thumbnail.webp">
+                        <div class="video-time">3:11</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <a href="https://www.youtube.com/@avicii">
+                        <div class="channel-picture">
+                            <img class="profile-picture" src="Channel-Profile-Pic/The nights channel logo.jpg">
+                        </div>
+                    </a>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=UtF6Jej8yb4">Avicii - The Nights</a>
+                        </p>   
+                            <p class="video-author">
+                                <a href="https://www.youtube.com/@avicii">Avicii <img class="music-png" src="Png/music.png" alt=""></a>
+                            </p>
+                            <p class="video-stats">
+                                918M views &#183; 8 years ago
+                            </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=r6tH55syq0o&t=5s">
+                        <img class="thumbnail" src="Thumbnail/Fireship-channel-pfp.webp">
+                        <div class="video-time">6:20</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                      <a href="https://www.youtube.com/@Fireship"><img class="profile-picture" src="Channel-Profile-Pic/Fireship.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=r6tH55syq0o&t=5s">How programmers flex on each other</a>
+                        </p>
+                            <p class="video-author">
+                                <a href="https://www.youtube.com/@Fireship">Fireship<img class="verify-png" src="Png/check.png" alt=""></a>
+                            </p>
+                            <p class="video-stats">
+                                1.3M views &#183; 1 month ago 
+                            </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=J8DGjUv-Vjc&t=10s">
+                        <img class="thumbnail" src="Thumbnail/Minimalism.webp">
+                        <div class="video-time">1:18:00</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@TheMinimalists"><img class="profile-picture" src="Channel-Profile-Pic/channel-pfp.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=J8DGjUv-Vjc&t=10s">MINIMALISM: Official Netflix Documentary (Entire Film)</a>
+                        </p>
+                        <p class="video-author">
+                                <a href="https://www.youtube.com/@TheMinimalists">The Minimalists <img class="verify-png" src="Png/check.png" alt=""></a>
+                        </p>
+                        <p class="video-stats">
+                                5.3M views &#183; 3 months ago
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=xyQY8a-ng6g&t=1s">
+                        <img class="thumbnail" src="Thumbnail/Ted-ed thumbnail.webp">
+                        <div class="video-time">4:53</div> 
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@TEDEd"><img class="profile-picture" src="Channel-Profile-Pic/Ted-ed channel logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=xyQY8a-ng6g&t=1s">How the food you eat affects your brain - Mia Nacamulli</a>
+                        </p>
+                         <p class="video-author">
+                            <a href="https://www.youtube.com/@TEDEd">TED-Ed <img class="verify-png" src="Png/check.png" alt=""></a>
+                        </p>
+                        <p class="video-stats">
+                            18M views &#183; 7 years ago
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=sC2nElyx7Ds">
+                        <img class="thumbnail" src="Thumbnail/Heart attack song thumbnail.webp">
+                        <div class="video-time">3:51</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@EnriqueIglesias"><img class="profile-picture" src="Channel-Profile-Pic/Enrique Iglesias Channel logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                           <a href="https://www.youtube.com/watch?v=sC2nElyx7Ds"> Enrique Iglesias - Heart Attack (Official Music Video)</a>
+                        </p>
+                        <p class="video-author">
+                            <a href="https://www.youtube.com/@EnriqueIglesias">Enrique Iglesias <img class="music-png" src="Png/music.png" alt=""></a>
+                        </p>
+                        <p class="video-stats">
+                            109M views &#183; 9 years ago
+                        </p>    
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=XBu54nfzxAQ">
+                        <img class="thumbnail" src="Thumbnail/Backend thumbnail.webp">
+                        <div class="video-time">12:58</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@SuperSimpleDev"><img class="profile-picture" src="Channel-Profile-Pic/backend channel logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=XBu54nfzxAQ">Backend web development - a complete overview</a>
+                        </p>
+                        <p class="video-author">
+                            <a href="https://www.youtube.com/@SuperSimpleDev">SuperSimpleDev</a>
+                        </p>
+                        <p class="video-stats">
+                            1.2M views &#183; 1 year ago
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=Tq6JhKwmAUw&t=1s">
+                        <img class="thumbnail" src="Thumbnail/City thumbnail.webp">
+                        <div class="video-time">4:14</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@thisisrahulnayek"><img class="profile-picture" src="Channel-Profile-Pic/Rahul Nayek channel logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=Tq6JhKwmAUw&t=1s">How To Place Video Inside Text Using Filmora 9</a>
+                        </p>
+                        <p class="video-author">
+                            <a href="https://www.youtube.com/@thisisrahulnayek">Rahul Nayek</a>
+                        </p>
+                        <p class="video-stats">
+                            377 views &#183; 2 years ago
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=5791L8VEHZw">
+                        <img class="thumbnail" src="Thumbnail/Ali Abdal thumbnail.webp">
+                        <div class="video-time">15:38</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@aliabdaal"><img class="profile-picture" src="Channel-Profile-Pic/Ali Abdaal Channel logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=5791L8VEHZw">My Productivity Desk Setup</a>
+                        </p>
+                        <p class="video-author">
+                            <a href="https://www.youtube.com/@aliabdaal">Ali Abdaal <img class="verify-png" src="Png/check.png" alt=""></a>
+                        </p>
+                        <p class="video-stats">
+                            1.9M views &#183; 2 years ago
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=Tuw8hxrFBH8&t=4s">
+                        <img class="thumbnail" src="Thumbnail/Motivation ark thumbnail.webp">
+                        <div class="video-time">10:31</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@MotivationArk"><img class="profile-picture" src="Channel-Profile-Pic/Motivation ark channel logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=Tuw8hxrFBH8&t=4s">One of the Greatest Speeches Ever | Steve Jobs</a>
+                        </p>
+                        <p class="video-author">
+                            <a href="https://www.youtube.com/@MotivationArk">Motivation Ark <img class="verify-png" src="Png/check.png" alt=""></a>
+                        </p>
+                        <p class="video-stats">
+                            29M views &#183; 2 years ago
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=h6fcK_fRYaI&t=1s">
+                        <img class="thumbnail" src="Thumbnail/The egg thumbnail.webp">
+                        <div class="video-time">7:55</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@kurzgesagt"><img class="profile-picture" src="Channel-Profile-Pic/the egg channel logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=h6fcK_fRYaI&t=1s">The Egg &dash; A Short Story</a>
+                        </p>
+                        <p class="video-author">
+                            <a href="https://www.youtube.com/@kurzgesagt">Kurzgesagt &dash; In a Nutshell <img class="verify-png" src="Png/check.png" alt=""></a>
+                        </p>
+                        <p class="video-stats">
+                            29M views &#183; 4 years ago
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=S4E4yAktjug&t=7s">
+                        <img class="thumbnail" src="Thumbnail/Invisible thumbnail.webp">
+                        <div class="video-time">24:06</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                       <a href="https://www.youtube.com/@Hallden_"><img class="profile-picture" src="Channel-Profile-Pic/Invisible channel logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=S4E4yAktjug&t=7s">How To Become Invisible Online</a>
+                        </p>
+                        <p class="video-author">
+                            <a href="https://www.youtube.com/@Hallden_">Hallden</a>
+                        </p>
+                        <p class="video-stats">
+                            2.6M views &#183; 2 years ago
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=6ZwwapPikyQ">
+                        <img class="thumbnail" src="Thumbnail/Samay Samjhayega thumbnail.webp">
+                        <div class="video-time">3:18</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@MOhitLalwaniOfficial"><img class="profile-picture" src="Channel-Profile-Pic/ML records channel logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=6ZwwapPikyQ">Samjhayega Full Song</a>
+                        </p>
+                        <p class="video-author">
+                            <a href="https://www.youtube.com/@MOhitLalwaniOfficial">ML Records</a>
+                        </p>
+                        <p class="video-stats">
+                            26M views &#183; 1 year ago                             
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=LEtP7HgGTu0">
+                        <img class="thumbnail" src="Thumbnail/APJ Abdul Kalam thumbnail.webp">
+                        <div class="video-time">22:50</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@EnglishSpeeches"><img class="profile-picture" src="Channel-Profile-Pic/English Speeches channel logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=LEtP7HgGTu0"> ENGLISH SPEECH | DR. A.P.J ABDUL KALAM: Culture of Excellence (English Subtitles)</a>
+                        </p>
+                        <p class="video-author">
+                            <a href="https://www.youtube.com/@EnglishSpeeches">English Speeches <img class="verify-png" src="Png/check.png" alt=""></a>
+                        </p>
+                        <p class="video-stats">
+                            616K views &#183; 1 year ago                           
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=21pmwl0hrME&t=86s">
+                        <img class="thumbnail" src="Thumbnail/Life at google thumbnail.webp">
+                        <div class="video-time">15:29</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <a href="https://www.youtube.com/@LifeatGoogle"><img class="profile-picture" src="Channel-Profile-Pic/google logo.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=21pmwl0hrME&t=86s">Google India Engineers in a Mock Coding Interview</a>
+                        </p>
+                        <p class="video-author">
+                           <a href="https://www.youtube.com/@LifeatGoogle">Life at Google <img class="verify-png" src="Png/check.png" alt=""> </a>
+                        </p>
+                        <p class="video-stats">
+                            108K views &#183; 3 months ago                            
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <a href="https://www.youtube.com/watch?v=GNDO2G6YySA">
+                        <img class="thumbnail" src="Thumbnail/empty your mind thumbnail.webp">
+                        <div class="video-time">4:38</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                       <a href="https://www.youtube.com/@TheFictionist2116"><img class="profile-picture" src="Channel-Profile-Pic/empty your mind channel profile pic.jpg"></a>
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">
+                            <a href="https://www.youtube.com/watch?v=GNDO2G6YySA">Empty Your Mind - a powerful zen story for your life.</a>
+                        </p>
+                        <p class="video-author">
+                            <a href="https://www.youtube.com/@TheFictionist2116">The Fictionist</a>
+                        </p>
+                        <p class="video-stats">
+                            2.1M views &#183; 4 months ago                     
+                        </p>
+                    </div>
+                    <div class="more">
+                        <img class="more-icon" src="Icons/more.svg" alt="">
+                    </div>
+                </div>
+            </div>
+         
+
+        </section>
+    </main>
+</body>
+</html>
